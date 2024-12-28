@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="passwordContainer">
+      <h1>Enter Password to Play</h1>
+      <input type="password" id="passwordInput" placeholder="Enter Password" />
+      <button onclick="checkPassword()">Submit</button>
+      <p id="errorMessage"></p>
+    </div>
+
+    <div id="gameContainer">
+      <h1>3D Snake Game</h1>
+      <canvas id="gameCanvas" width="600" height="600"></canvas>
+      <p id="score">Score: 0</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
